@@ -19,7 +19,7 @@ class Conexao
 	{
 		$sql = "SELECT * FROM {$table}";
 		if(!(empty($where))){
-			$sql .= " WHERE nome=:where";
+			$sql .= " WHERE nome like :where";
 		}
 
 		$list = $this->db->prepare($sql);
@@ -28,7 +28,7 @@ class Conexao
 			$list->execute();
 		}else{
 			$list->execute([
-				":where"=>$where
+				":where"=>$where."%"
 			]);
 		}
 

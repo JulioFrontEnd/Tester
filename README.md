@@ -1,1 +1,9 @@
-# Tester
+# SQL
+
+APRENDI QUE : 
+WHERE NOME = VALOR (==) 
+e WHERE NOME LIKE VALOR% (VALOR QUE COMEÇA) 
+ou WHERE NOME LIKE %VALOR (VALOR QUE TERMINA)
+ou WHERE NOME LIKE %VALOR% (VALOR ENTRE)
+
+ou seja, o % funciona como um coringa
