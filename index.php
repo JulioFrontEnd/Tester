@@ -4,8 +4,7 @@ use App\Conexao;
 
 $value = new Conexao();
 
-$value = $value->returnAll("aluno","Julio");
-
+$value = $value->returnAll("aluno");
 foreach ($value as $key) {
-	echo "NOME: ".$key["nome"]."<br>MATRÍCULA: ".$key["matricula"]."<br><br><br>";
+	echo "NOME: ".$key->nome."<br>MATRÍCULA: ".$key->matricula."<br><br>";
 }
